@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tienda Virtual</string>
+
+    <string name="op_inicio_v">Inicio</string>
+    <string name="op_mi_tienda_v">Mi Tienda</string>
+    <string name="op_resenia_v">Reseñas</string>
+    <string name="op_cerrar_sesion_v">Cerrar Sesión</string>
+
+
+
+</resources>
