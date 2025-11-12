@@ -38,31 +38,31 @@ class RegistroVendedorActivity : AppCompatActivity() {
     private var cpassword = ""
     private fun validarInformacion(){
         nombres = binding.etNombresV.text.toString().trim()
-        email = binding.etEmailV.text.toString().trim()
-        password = binding.etPasswordV.text.toString().trim()
-        cpassword = binding.etCPasswordV.text.toString().trim()
+        email = binding.etEmail.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
+        cpassword = binding.etCPassword.text.toString().trim()
 
         if(nombres.isEmpty()) {
             binding.etNombresV.error = "Ingrese sus nombres"
             binding.etNombresV.requestFocus()
         } else if (email.isEmpty()){
-            binding.etEmailV.error = "Ingrese su email"
-            binding.etEmailV.requestFocus()
+            binding.etEmail.error = "Ingrese su email"
+            binding.etEmail.requestFocus()
         } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.etEmailV.error = "Email no válido"
-            binding.etEmailV.requestFocus()
+            binding.etEmail.error = "Email no válido"
+            binding.etEmail.requestFocus()
         } else if (password.isEmpty()){
-            binding.etPasswordV.error = "Ingrese su password"
-            binding.etPasswordV.requestFocus()
+            binding.etPassword.error = "Ingrese su password"
+            binding.etPassword.requestFocus()
         } else if (password.length < 6){
-            binding.etPasswordV.error = "Necesita 6 o mas caracteres."
-            binding.etPasswordV.requestFocus()
+            binding.etPassword.error = "Necesita 6 o mas caracteres."
+            binding.etPassword.requestFocus()
         } else if (cpassword.isEmpty()) {
-            binding.etCPasswordV.error = "Confime su password"
-            binding.etCPasswordV.requestFocus()
+            binding.etCPassword.error = "Confime su password"
+            binding.etCPassword.requestFocus()
         } else if (password!=cpassword){
-            binding.etCPasswordV.error = "No coincide"
-            binding.etCPasswordV.requestFocus()
+            binding.etCPassword.error = "No coincide"
+            binding.etCPassword.requestFocus()
         } else {
             registrarVendedor()
         }

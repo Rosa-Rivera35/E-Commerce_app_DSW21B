@@ -28,10 +28,15 @@
     <!--Registro de vendedor-->
     <string name="txtRegistroV">Registro de vendedor</string>
     <string name="etNombresV">Nombres completos</string>
-    <string name="etEmailV">Email</string>
-    <string name="etPasswordV">Password</string>
-    <string name="etCPasswordV">Confirmar password</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+    <string name="etCPassword">Confirmar password</string>
     <string name="btnRegistraV">Registrarme</string>
+
+    <!--Registro de clientes-->
+    <string name="txtRegistroC">Registro de cliente</string>
+    <string name="etNombresC">Nombres completos</string>
+    <string name="btnRegistraC">Registrarme</string>
 
     <!--Login de vendedor-->
     <string name="txtLoginV">Login de vendedor</string>

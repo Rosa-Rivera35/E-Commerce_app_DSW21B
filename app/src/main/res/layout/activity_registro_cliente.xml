@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vendedor.RegistroVendedorActivity">
+    tools:context=".Cliente.RegistroClienteActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -15,10 +15,10 @@
         android:padding="15dp">
 
         <TextView
-            android:text="@string/txtRegistroV"
+            android:text="@string/txtRegistroC"
+            android:layout_gravity="center"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -26,7 +26,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:src="@drawable/registro_vendedor"
+            android:src="@drawable/registro_clientes"
             android:layout_width="80dp"
             android:layout_height="80dp"/>
 
@@ -36,8 +36,8 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etNombresV"
-                android:hint="@string/etNombresV"
+                android:id="@+id/etNombresC"
+                android:hint="@string/etNombresC"
                 android:drawableStart="@drawable/ico_nombres"
                 android:drawablePadding="5dp"
                 android:inputType="textPersonName|textCapWords"
@@ -98,14 +98,15 @@
 
         <!--Registrar vendedor-->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegistraV"
-            android:text="@string/btnRegistraV"
+            android:id="@+id/btnRegistraC"
+            android:text="@string/btnRegistraC"
             app:cornerRadius="8dp"
             android:textAllCaps="true"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
