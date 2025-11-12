@@ -6,7 +6,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Vendedor.LoginVendedorActivity">
+    tools:context=".Cliente.LoginClienteActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         android:padding="15dp">
 
         <TextView
-            android:text="@string/txtLoginV"
+            android:text="@string/txtLogonC"
             android:layout_gravity="center"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -65,8 +65,8 @@
 
         <!--Boton de login-->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnLoginV"
-            android:text="@string/btnLoginV"
+            android:id="@+id/btnLoginC"
+            android:text="@string/btnLoginC"
             android:textAllCaps="true"
             app:cornerRadius="8dp"
             android:layout_marginTop="15dp"
@@ -85,8 +85,8 @@
 
         <!--Registrar un vendedor-->
         <TextView
-            android:id="@+id/tvRegistrarV"
-            android:text="@string/tvRegistrarV"
+            android:id="@+id/tvRegistrarC"
+            android:text="@string/tvRegistrarC"
             android:textStyle="bold"
             android:textColor="@color/celeste_oscuro"
             android:layout_gravity="end"

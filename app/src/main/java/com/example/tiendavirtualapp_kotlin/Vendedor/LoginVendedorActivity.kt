@@ -37,18 +37,18 @@ class LoginVendedorActivity : AppCompatActivity() {
     private var email = ""
     private var password = ""
     private fun validarInfo() {
-        email = binding.etEmailV.text.toString().trim()
-        password = binding.etPasswordV.text.toString().trim()
+        email = binding.etEmail.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
 
         if (email.isEmpty()){
-            binding.etEmailV.error = "Ingrese email"
-            binding.etEmailV.requestFocus()
+            binding.etEmail.error = "Ingrese email"
+            binding.etEmail.requestFocus()
         }else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            binding.etEmailV.error = "Email no válido"
-            binding.etEmailV.requestFocus()
+            binding.etEmail.error = "Email no válido"
+            binding.etEmail.requestFocus()
         }else if (password.isEmpty()){
-            binding.etPasswordV.error = "Ingrese password"
-            binding.etPasswordV.requestFocus()
+            binding.etPassword.error = "Ingrese password"
+            binding.etPassword.requestFocus()
         }else{
             loginVendedor()
         }

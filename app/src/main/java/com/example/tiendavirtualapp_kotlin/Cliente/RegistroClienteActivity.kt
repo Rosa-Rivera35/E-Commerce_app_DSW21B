@@ -14,4 +14,3 @@ class RegistroClienteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_registro_cliente)
         }
     }
-}

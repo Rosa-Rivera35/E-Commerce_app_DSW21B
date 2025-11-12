@@ -4,6 +4,9 @@
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
 
+    <string name="tipoVendedor">Vendedor</string>
+    <string name="tipoCliente">Cliente</string>
+
     <!--NavigationDrawer Vendedor-->
     <string name="op_inicio_v">Inicio</string>
     <string name="op_mi_tienda_v">Mi tienda</string>
@@ -43,6 +46,11 @@
     <string name="btnLoginV">Ingresar</string>
     <string name="txtNoCuenta">¿No tienes una cuenta?</string>
     <string name="tvRegistrarV">Registrarme</string>
+
+    <!--Login de cliente-->
+    <string name="txtLogonC">Login de cliente</string>
+    <string name="btnLoginC">Ingresar</string>
+    <string name="tvRegistrarC">Registrarme</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.tiendavirtualapp_kotlin.R
+import com.example.tiendavirtualapp_kotlin.SeleccionarTipoActivity
 import com.example.tiendavirtualapp_kotlin.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import com.example.tiendavirtualapp_kotlin.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
 import com.example.tiendavirtualapp_kotlin.Vendedor.Nav_Fragments_Vendedor.FragmentInicioV
@@ -60,14 +61,14 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
 
     private fun cerrarSesion() {
         firebaseAuth!!.signOut()
-        startActivity(Intent(applicationContext, LoginVendedorActivity::class.java))
+        startActivity(Intent(applicationContext, SeleccionarTipoActivity::class.java))
         finish()
         Toast.makeText(applicationContext, "Has cerrado sesión", Toast.LENGTH_SHORT).show()
     }
     private fun comprobarSesion() {
         /*Si el usuario no a iniciado sesion*/
         if(firebaseAuth!!.currentUser == null) {
-            startActivity(Intent(applicationContext, LoginVendedorActivity::class.java))
+            startActivity(Intent(applicationContext, SeleccionarTipoActivity::class.java))
         }else{
             Toast.makeText(applicationContext, "Vendedor en línea", Toast.LENGTH_SHORT).show()
         }
